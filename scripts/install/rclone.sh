@@ -50,7 +50,7 @@ ExecStart=/usr/bin/rclone mount gdrive: /home/%i/cloud/ \
   --timeout 30s \
   --umask 002 \
   --allow-other \
-  --poll-interval=1h \
+  --poll-interval=60s \
   --vfs-cache-mode writes \
   --vfs-read-chunk-size 1M \
   --vfs-read-chunk-size-limit 64M \
